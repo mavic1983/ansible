@@ -36,4 +36,6 @@
     - unzip
     - yum-cron
     - wget
+    - zip
+    - rsync
 

@@ -26,7 +26,7 @@
 
 - name: Check that the somefile.conf exists
   stat:
-    path: "/opt/eap/standalone/deployments//kie-server.war/WEB-INF/web.xml"
+    path: "/opt/eap/standalone/deployments/kie-server.war/WEB-INF/web.xml"
   register: kieserver_stat_result
 
 - name: Copy KIE-Server artifact

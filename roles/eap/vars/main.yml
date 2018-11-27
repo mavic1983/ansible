@@ -4,13 +4,13 @@
 
 #eap_artifact_repo: http://files.justinholmes.co
 #eap_artifact_name: jboss-eap-6.4.5-full-build.zip
-eap_artifact_repo: /home/vagrant/Installables/JBoss/RHPAM7/7.1.0
+eap_artifact_repo: /home/vagrant/RHPAM7/7.1.0
 eap_artifact_name: jboss-eap-7.1.0.zip
 
 eap_unarchive_temp_dest: /tmp/eap
 eap_dest: /opt/eap
 
-eap_patch_artifact_repo: /home/vagrant/Installables/JBoss/RHPAM7/7.1.0
+eap_patch_artifact_repo: /home/vagrant/RHPAM7/7.1.0
 eap_patch_artifact_name: jboss-eap-7.1.3-patch.zip
 
 eap_service_conf_dir: /etc/eap
