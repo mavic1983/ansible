@@ -62,4 +62,16 @@
   args:
     creates: /opt/eap/standalone/deployments/kie-server.war/WEB-INF/web.xml
 
+- name: Copy KIE-Server SecurityPolicy
+  shell: cp -R /tmp/rhpam/SecurityPolicy /opt/eap/bin
+
+# TODO Edit standalone.xml and standalone-full.xml to add properties org.kie.server.
+
+# TODO Edit standalone.xml and standalone-full.xml to add datasource properties for java:jboss/PostgresXADS
+
+#Add kieserver user
+- name: Add Kieserver user
+  shell: sh /opt/eap/bin/add-user.sh -a --user kieserver --password kieserver1! --role rest-all,kie-server
+
 - include: java_opts.yml
+#

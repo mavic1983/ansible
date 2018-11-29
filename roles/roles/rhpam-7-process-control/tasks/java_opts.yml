@@ -1,6 +1,0 @@
-#---
-#- name: Set Hibernate Persistence Dialect for KIE Server
-#  lineinfile:
-#    dest: "{{ eap_runtime_conf_file }}"
-#    line: JAVA_OPTS="$JAVA_OPTS -Dorg.kie.server.persistence.dialect=org.hibernate.dialect.PostgreSQLDialect"
-#  when: bpms_expose_git_daemon

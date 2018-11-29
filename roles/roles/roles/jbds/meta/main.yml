@@ -1,6 +1,0 @@
----
-dependencies:
-   - { role: java }
-   - { role: gnome}
-
-

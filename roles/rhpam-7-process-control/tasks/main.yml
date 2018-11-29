@@ -42,4 +42,3 @@
   args:
     creates: /opt/eap/standalone/deployments/kie-server.war/WEB-INF/web.xml
 
-#- include: java_opts.yml
