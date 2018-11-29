@@ -1,0 +1,5 @@
+---
+dependencies:
+   - { role: rhpam-7-base }
+   - { role: postgresql-eap-module }
+   - { role: postgresql-server }

@@ -31,17 +31,11 @@
     state: latest
 #    enablerepo: rhel-7-server-optional-rpms
   with_items:
-    - https://centos7.iuscommunity.org/ius-release.rpm
     - git
     - vim
     - unzip
     - yum-cron
     - wget
     - zip
-    - python36u
-    - python36u-libs
-    - python36u-devel
-    - python36u-pip
-    - python-lxml.x86_64
     - rsync
 

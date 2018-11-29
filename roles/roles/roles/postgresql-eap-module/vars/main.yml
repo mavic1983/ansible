@@ -1,0 +1,10 @@
+---
+#https://jdbc.postgresql.org/download/postgresql-42.2.5.jar
+#https://jdbc.postgresql.org/download/postgresql-9.4-1206-jdbc42.jar
+postgresql:
+  jdbc:
+    driver:
+      base_url: https://jdbc.postgresql.org/download/
+      name: postgresql-42.2.5.jar
+    module:
+      dest: /opt/eap/modules/org/postgresql/main/

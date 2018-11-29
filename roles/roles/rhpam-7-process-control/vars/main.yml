@@ -1,0 +1,4 @@
+---
+processcontrol_artifact_name: rhpam-7.1.0-add-ons.zip
+
+processcontrol_unarchive_temp_dest: /tmp/rhpam-7.1.0-add-ons

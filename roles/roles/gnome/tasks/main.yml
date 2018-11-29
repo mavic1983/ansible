@@ -20,28 +20,21 @@
 #    autosubscribe: true
 #  when: os1_distro_variant == 'rhel'
 
-- name: Ensure the Yum Package is Updated
-  yum:
-    name: yum
-    state: latest
+- name: Install Gnome Desktop
+  yum: 
+    name: "@^GNOME Desktop"
+    state: present
 
-- name: Install Basic Packages
-  yum:
-    name: "{{ item }}"
-    state: latest
-#    enablerepo: rhel-7-server-optional-rpms
-  with_items:
-    - https://centos7.iuscommunity.org/ius-release.rpm
-    - git
-    - vim
-    - unzip
-    - yum-cron
-    - wget
-    - zip
-    - python36u
-    - python36u-libs
-    - python36u-devel
-    - python36u-pip
-    - python-lxml.x86_64
-    - rsync
+- name: Get default runlevel
+  command: systemctl get-default
+  register: runlevel
+
+- name: Set graphical runlevel
+  command: systemctl set-default graphical.target
+  when: runlevel.stdout != "graphical.target"
+
+- name: Start Graphical
+  service:
+    name: graphical.target
+    state: started
 

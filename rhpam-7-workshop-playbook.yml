@@ -1,4 +1,4 @@
-- hosts: default
+- hosts: rhpam7
   remote_user: vagrant
   become: true
   become_method: sudo
